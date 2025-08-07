@@ -33,3 +33,9 @@ ball.addEventListener("click", () => {
   });
   ball.classList.toggle("active");
 });
+//video autoplay
+  document.addEventListener('click', function () {
+    const video = document.getElementById('myVideo');
+    video.volume = 1.0; // đảm bảo có âm thanh
+    video.play();
+  }, { once: true }); // chỉ chạy 1 lần sau click đầu tiên

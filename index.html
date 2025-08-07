@@ -9,6 +9,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Movie Design</title>
 </head>
 
@@ -23,7 +24,7 @@
                     <li class="menu-list-item active">Home</li>
                     <li class="menu-list-item">Movies</li>
                     <li class="menu-list-item">Series</li>
-                    <li class="menu-list-item">Populars</li>
+                    <li class="menu-list-item">Popular</li>
                     <li class="menu-list-item">Trends</li>
 
                 </ul>
@@ -55,25 +56,56 @@
         <div class="content-container">
             <div class="featured-content"
                 style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/f-1.jpg');">
-                <img class="featured-title" src="img/f-t-1.png" alt="">
-                <p class="featured-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor
-                    deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis
-                    minima voluptatibus incidunt. Accusamus, provident.</p>
-                <button class="featured-button">WATCH</button>
+                <video id="myVideo" preload="auto" loop>
+    <source src="/img/yt1s.com--Marvel-Studios-Avengers-Infinity-War-Official-Trailer_1080p.mp4" type="video/mp4">
+                </video>
+                        <div class="movie-overlay">
+                    <h2>Jurassic World Rebirth</h2>
+
+                    <div class="tags">
+                    <span class="tag imdb">IMDb 6.2</span>
+                    <span class="tag quality">4K</span>
+                    <span class="tag age">T16</span>
+                    <span class="tag year">2025</span>
+                    <span class="tag duration">2h 10m</span>
+                    </div>
+
+                    <div class="genres">
+                    <span>Chiếu Rạp</span>
+                    <span>Gay Cấn</span>
+                    <span>Khoa Học</span>
+                    <span>Bí Ẩn</span>
+                    <span>Phiêu Lưu</span>
+                    <span>Giả Tưởng</span>
+                    </div>
+
+                    <p class="description">
+                    Phim lấy bối cảnh 5 năm sau phần phim Thế Giới Khủng Long:...
+                    </p>
+
+                    <div class="movie-actions">
+                    <button class="play"><i class="fa fa-play"></i></button>
+                    <button class="like"><i class="fa fa-heart"></i></button>
+                    <button class="info"><i class="fa fa-info-circle"></i></button>
+                    </div>
+                </div>
+                </div>
+
+<!-- Sản phẩm tiếp theo -->
             </div>
             <div class="movie-list-container">
                 <h1 class="movie-list-title">NEW RELEASES</h1>
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
                             <span class="movie-list-item-title">Her</span>
                             <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
                                 hic fugit similique accusantium.</p>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/2.jpeg" alt="">
+                            <img class="movie-list-item-img" src="img/2.jpg" alt="">
                             <span class="movie-list-item-title">Star Wars</span>
                             <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
                                 hic fugit similique accusantium.</p>
@@ -188,14 +220,14 @@
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
                             <span class="movie-list-item-title">Her</span>
                             <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
                                 hic fugit similique accusantium.</p>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/2.jpeg" alt="">
+                            <img class="movie-list-item-img" src="img/2.jpg" alt="">
                             <span class="movie-list-item-title">Her</span>
                             <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
                                 hic fugit similique accusantium.</p>
@@ -273,21 +305,21 @@
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <img class="movie-list-item-img" src="img/9.jpg" alt="">
                             <span class="movie-list-item-title">Her</span>
                             <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
                                 hic fugit similique accusantium.</p>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <img class="movie-list-item-img" src="img/8.jpg" alt="">
                             <span class="movie-list-item-title">Her</span>
                             <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
                                 hic fugit similique accusantium.</p>
                             <button class="movie-list-item-button">Watch</button>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpg" alt="">
+                            <img class="movie-list-item-img" src="img/5.jpg" alt="">
                             <span class="movie-list-item-title">Her</span>
                             <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
                                 hic fugit similique accusantium.</p>

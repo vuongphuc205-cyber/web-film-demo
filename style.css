@@ -10,8 +10,9 @@ body {
   width: 100%;
   height: 50px;
   background-color: black;
-  position: sticky;
+  position:fixed;
   top: 0;
+  z-index: 99999;
 }
 
 .navbar-container {
@@ -21,6 +22,7 @@ body {
   height: 100%;
   color: white;
   font-family: "Sen", sans-serif;
+  
 }
 
 .logo-container {
@@ -144,9 +146,18 @@ body {
   outline: none;
   font-weight: bold;
 }
+.featured-content video {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 96.5%;
+  height: 63%;
+  object-fit: cover;
 
+  pointer-events: none; /* Không cho click vào video */
+}
 .movie-list-container {
-  padding: 0 20px;
+  padding: 0 55px;
 }
 
 .movie-list-wrapper {
@@ -271,4 +282,74 @@ body {
     .menu-container{
         display: none;
     }
+}
+/* hiển thị thông tin trên vid */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.movie-overlay {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: white;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.movie-overlay h2 {
+  font-size: 36px;
+  color: gold;
+}
+
+.tags, .genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.tag {
+  background: rgba(0,0,0,0.6);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.genres span {
+  background: rgba(255,255,255,0.1);
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.description {
+  margin: 15px 0;
+  line-height: 1.6;
+  text-shadow: 1px 1px 4px black;
+}
+
+.movie-actions button {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.movie-actions button:hover {
+  background: rgba(255,255,255,0.3);
 }
