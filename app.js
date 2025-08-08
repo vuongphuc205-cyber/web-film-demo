@@ -39,3 +39,20 @@ ball.addEventListener("click", () => {
     video.volume = 1.0; // đảm bảo có âm thanh
     video.play();
   }, { once: true }); // chỉ chạy 1 lần sau click đầu tiên
+// Mở popup tìm kiếm
+document.querySelector(".fa-search").addEventListener("click", () => {
+  document.querySelector(".search-popup").classList.toggle("active");
+});
+
+// Bookmark click
+let bookmarkCount = 0;
+document.querySelector(".fa-bookmark").addEventListener("click", (e) => {
+  bookmarkCount++;
+  document.querySelector(".bookmark-badge").innerText = bookmarkCount;
+  e.target.classList.toggle("active");
+});
+
+// Scroll to top khi click Home
+document.querySelector(".fa-home").addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: 'smooth', transition: 'all 0.3s ease' });
+});
